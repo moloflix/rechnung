@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Flix Panel</title>
+        <link rel="icon" href="fav.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/179fef4489.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="config.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+       <div class="container">
+        <div class="bill-container">
+            <div class="bills">
+                <p class="title">Rechnung Erstellen</p>
+                <div class="product-section">
+                    <div class="first-row">
+                        <select id="pet-select"></select>
+                        <input id="price" type="text" placeholder="السعر">
+                        <i id="add" class="fa-regular fa-square-plus"></i>
+                    </div>
+                    <div class="sec-row">
+                        <input id="input" class="input" type="text" placeholder="أكتب أسم المنتج هنا">
+                    </div>
+                </div>
+                <div class="products"></div>
+                <div class="print-save">
+                    <div id="btnPrint" class="print">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </body>
+</html>

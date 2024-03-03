@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tab{
+    border-collapse: collapse;
+    width: inherit;
+}
+
+.tab tr{
+    border-top: 2px solid black;
+}
+
+td.description,
+th.description {
+    font-size: 12px;
+    text-align: center;
+    width: 75px;
+    max-width: 75px;
+    padding: 5px;
+}
+
+td.quantity,
+th.quantity {
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    max-width: 40px;
+    word-break: break-all;
+}
+
+td.price,
+th.price {
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    max-width: 40px;
+    word-break: break-all;
+}
+
+.bar {
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    margin: 2px 0;
+    padding-bottom: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date {
+    margin: 0;
+    padding-bottom: 2px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.secTab {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width: inherit;
+}
+
+.secTable {
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+    max-width: 40px;
+    padding-top: 2px;
+}
+
+.centered {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.footer {
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.ticket {
+    width: 175px;
+    max-width: 175px;
+}
+
+img {
+    max-width: inherit;
+    width: inherit;
+}
+
+@media print {
+    .hidden-print,
+    .hidden-print * {
+        display: none !important;
+    }
+}
