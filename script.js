@@ -137,18 +137,13 @@ function PrintElem() {
 }
 
 function Popup(data) {
-var myWindow = window.open('', 'Receipt', 'height=400,width=600');
-myWindow.document.write('<html><head><title>Receipt</title>');
-myWindow.document.write('<link rel="icon" href="fav.ico">');
-myWindow.document.write('<link rel="stylesheet" href="./receipt/style.css">');
-myWindow.document.write('<style type="text/css"> *, html {margin:3;padding:0;} </style>');
-myWindow.document.write('</head><body>');
-myWindow.document.write(data);
-myWindow.document.write('</body></html>');
+    var myWindow = window.open('', 'Receipt', 'height=400,width=600');
+    myWindow.document.write('<html><head><title>Receipt</title>');
+    myWindow.document.write('<link rel="icon" href="fav.ico">');
+    myWindow.document.write('<link rel="stylesheet" href="./receipt/style.css">');
+    myWindow.document.write('<style type="text/css"> *, html {margin:3;padding:0;} </style>');
+    myWindow.document.write('</head><body>');
+    myWindow.document.write(data);
+    myWindow.document.write('</body></html>');
 
-// Close the window after a delay
-setTimeout(function() {
-    myWindow.print();
-    myWindow.close();
-}, 1000); // Adjust the delay as needed
 }
