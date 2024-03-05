@@ -145,5 +145,9 @@ function Popup(data) {
     myWindow.document.write('</head><body>');
     myWindow.document.write(data);
     myWindow.document.write('</body></html>');
-
+    // Close the window after a delay
+    setTimeout(function() {
+        myWindow.print();
+        myWindow.close();
+    }, 1000); // Adjust the delay as needed
 }
