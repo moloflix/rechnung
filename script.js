@@ -145,9 +145,9 @@ function Popup(data) {
     myWindow.document.write('</head><body>');
     myWindow.document.write(data);
     myWindow.document.write('</body></html>');
-    // Close the window after a delay
-    setTimeout(function() {
+    myWindow.document.close(); // necessary for IE >= 10
+    myWindow.onload = function () { // necessary if the div contain images
         myWindow.print();
         myWindow.close();
-    }, 1000); // Adjust the delay as needed
+    };
 }
