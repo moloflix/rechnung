@@ -152,8 +152,5 @@ myWindow.document.close();
 myWindow.addEventListener('load', function () {
     myWindow.focus(); // Focus the window
     myWindow.print(); // Print the content
-    setTimeout(function() {
-        myWindow.close(); // Close the window after printing
-    }, 1000); // Adjust delay if necessary
 });
 }
