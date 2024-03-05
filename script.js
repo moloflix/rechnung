@@ -145,12 +145,7 @@ myWindow.document.write('<style type="text/css"> *, html {margin:3;padding:0;} <
 myWindow.document.write('</head><body>');
 myWindow.document.write(data);
 myWindow.document.write('</body></html>');
-
-myWindow.document.close();
-
-// Add event listener for load event
 myWindow.addEventListener('load', function () {
-    myWindow.focus(); // Focus the window
     myWindow.print(); // Print the content
 });
 }
